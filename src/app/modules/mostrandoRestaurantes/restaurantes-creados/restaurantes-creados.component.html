@@ -1,0 +1,32 @@
+<body>
+
+  <!--Restaurantes:-->
+
+  <div id="resultados">
+    <div class="container-fluid">
+      <div class="row m0 d-flex flew-wrap">
+        <div *ngFor="let restaurante of restaurantesMostrar;let i = index" class="col-xs-12 col-sm-6 col-md-3 col-">
+          <div class="row g-0"></div>
+          <div class="card shadow-sm border p-2 h-100">
+            <img src="{{ restaurante.imagenRestaurante }}" alt="{{ restaurante.nombreRestaurante }}"
+              style="height: 100%; width: 100%; min-height: 450px"/>
+            <span class="align-bottom">
+              <h2 class="card-title text-center">
+                {{ restaurante.nombreRestaurante }}
+              </h2>
+              <div>
+                <h4 id="" class="text-center">
+                  {{ restaurante.direccionRestaurante }}
+                </h4>
+                <h3 id="" class="text-center">
+                  {{ restaurante.descripcionRestaurante }}
+                </h3>
+              </div>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

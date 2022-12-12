@@ -1,0 +1,35 @@
+<body>
+    <div id="tituloRestaurantes">
+        <h1>Crear Restaurante</h1>
+    </div>
+
+    <div id="formularioNew">
+        <div class="container">
+            <form [formGroup]="crearRestaurante">
+                <div class="mb-3 form-goup">
+                    <label for="insertNombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control"  />
+                </div>
+                <div class="mb-3 form-goup">
+                    <label for="insertDescripcion" class="form-label">Descripción</label>
+                    <input type="text" class="form-control"  />
+                </div>
+                <div class="mb-3 form-goup">
+                    <label for="insertDireccion" class="form-label">Dirección</label>
+                    <input type="text" class="form-control"  />
+                </div>
+                <div class="mb-3 form-goup">
+                    <label for="exampleInputPassword1" class="form-label">Imagen URL</label>
+                    <input type="url" class="form-control"  />
+                </div>
+                <button type="button" class="btn btn-primary" (click)="nuevoRestauranteBBDD()">
+                    <i class="fas fa-database"></i>Guardar
+                </button>
+            </form>
+        </div>
+    </div>
+    <!--Formulario-->
+    <main>
+        <div id="formulario"></div>
+    </main>
+</body>
